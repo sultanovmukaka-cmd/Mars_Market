@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mars Shop</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{navy:'#10104f',brand:'#f2542d'},fontFamily:{sans:['Inter','system-ui','sans-serif']}}}}
+</script>
+</head>
+<body class="flex min-h-screen flex-col bg-[#f3f3f3] font-sans text-[#111]">
+
+<header class="relative z-10 flex h-[70px] items-center justify-between bg-white px-5 shadow-[0_2px_6px_rgba(0,0,0,.18)] md:px-[60px]">
+  <img src="./image 2.png" alt="MARS IT School" class="h-[30px]">
+  <nav class="ml-20 mr-auto hidden gap-10 md:flex">
+    <a href="#" class="flex h-[70px] items-center gap-1.5 border-b-2 border-transparent text-sm font-semibold text-neutral-400"><img src="./image 4.png" alt="" class="h-4 w-4">Home</a>
+    <a href="#" class="flex h-[70px] items-center gap-1.5 border-b-2 border-transparent text-sm font-semibold text-neutral-400"><img src="./image 5.png" alt="" class="h-4 w-4">Learning</a>
+    <a href="#" class="flex h-[70px] items-center gap-1.5 border-b-2 border-brand text-sm font-semibold text-brand"><img src="./image 6.png" alt="" class="h-4 w-4">Shop</a>
+  </nav>
+  <div class="flex items-center gap-9">
+    <button class="rounded-lg border-[1.5px] border-brand bg-white px-5 py-2.5 text-sm font-semibold text-brand">+ Post yaratish</button>
+    <img src="./image 7.png" alt="Profil" class="h-9 w-9 rounded-full object-cover">
+  </div>
+</header>
+
+<main class="mx-auto w-full max-w-[1100px] flex-1 px-5 pb-10 pt-[30px] md:px-[60px]">
+  <div class="mb-[60px] flex flex-wrap items-center justify-between gap-4">
+    <h1 class="flex items-center gap-3 text-[22px] font-bold text-navy"><img src="./image 8.png" alt="" class="h-9 w-9">Magazin</h1>
+    <form id="search" class="flex gap-2.5" onsubmit="return false">
+      <input id="q" type="search" placeholder="search...." aria-label="Qidirish" class="h-[42px] w-40 rounded-lg bg-black px-4 text-sm text-white placeholder:text-neutral-300 md:w-[290px]">
+      <button id="go" type="button" class="h-[42px] rounded-lg bg-navy px-6 text-sm text-white">click</button>
+      <select id="sort" aria-label="Saralash" class="h-[42px] rounded-lg border border-neutral-300 bg-white px-2 text-sm">
+        <option value="">Saralash</option>
+        <option value="asc">Arzon → qimmat</option>
+        <option value="desc">Qimmat → arzon</option>
+        <option value="name">Nomi (A-Z)</option>
+      </select>
+    </form>
+    <button class="flex items-center gap-2 text-[19px] font-bold text-brand"><img src="./image 9.png" alt="" class="h-[22px] w-[22px]">Haridlar tarixi</button>
+  </div>
+
+  <div id="grid" class="grid grid-cols-2 gap-x-[18px] gap-y-6 md:grid-cols-3 lg:grid-cols-4">
+  </div>
+</main>
+
+<footer class="flex h-[42px] items-center justify-between border-t border-neutral-200 bg-white px-5 text-[10px] md:px-[60px]">
+  <span>MARS IT School 2022</span>
+  <img src="./image 33.png" alt="MARS" class="h-3.5">
+  <a href="#" class="text-[#111]">Политика конфиденциальности</a>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>
